@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">柑子树</string>
+
+    <string name="tv_loading">loading...</string>
+    <string name="bt_loading">进 入</string>
+    <string name="login_btn">登录</string>
+
+    <!--首页部分-->
+    <string name="custom_title_tab_follow">关注</string>
+    <string name="custom_title_tab_optional">自选</string>
+    <string name="custom_title_tab_select">精选</string>
+    <string name="custom_title_tab_find">发现</string>
+
+    <!--登录部分-->
+    <string name="login_login_btn">登录/注册</string>
+    <string name="login_logo_hint_tv">阅读，阅要，柑子树</string>
+    <string name="login_login_hint_bt_phone">手机号登录</string>
+    <string name="login_login_hint_bt_psw">密码登录</string>
+    <string name="login_forget_paw_tv">忘记密码 ? </string>
+
+    <!--消息界面-->
+    <string name="message_title_tab_notic">通知</string>
+    <string name="message_title_tab_commect">评论</string>
+
+</resources>

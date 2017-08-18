@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.admin.kk.main.MainActivity">
+    <LinearLayout
+        android:id="@+id/item_timeline_time_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/item_timeline_day"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="20" />
+        <TextView
+            android:id="@+id/item_timeline_yearmonth"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:text="2015/06"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_timeline_line_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toRightOf="@id/item_timeline_time_ll"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/black"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_action_accounts"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+
+    <!--这里要注意 宽度给300dp，原因不明-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/item_timeline_line_ll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/gray">
+        <TextView
+            android:id="@+id/item_timeline_content_item_tv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="parent"
+            android:text="《 恨不相逢未剃时》"/>
+        <TextView
+            android:id="@+id/item_timeline_content_item_tv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="发 | 摘 | 公"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/item_timeline_content_item_tv03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item_timeline_content_item_tv01"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end" android:maxLines="3"
+            android:text="苏漫溯不肯让自己停下来,在哪些位置的时光里？尝试追踪一下源码，发现mWindow是Window类型的，但是它是一个抽象类，setContentView也是抽象方法，所以我们要找到Window类的实现类才行。我们在Activity中查找一下mWindow在哪里被赋值了，可以发现它在Activity#attach方法中有如下实现："
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/item_timeline_content_item_tv04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_timeline_content_item_tv03"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            android:text="12：31"
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/item_timeline_content_item_tv05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_timeline_content_item_tv03"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            android:text="》》》》》"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/item_timeline_content_item_tv06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item_timeline_content_item_tv03"
+            app:layout_constraintRight_toLeftOf="@id/item_timeline_content_item_tv05"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            android:text="喜欢的人"
+            android:textSize="10sp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

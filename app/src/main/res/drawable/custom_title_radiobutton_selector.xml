@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_checked="true" >
+        <layer-list>
+
+            <item android:top="@dimen/titile_bar_radiobutton_height" >
+
+                <shape android:shape="rectangle" >
+                    <solid android:color="#1F8A70" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:drawable="@color/transparent"></item>
+
+</selector>

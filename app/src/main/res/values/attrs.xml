@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 带下划线的按钮 -->
+    <declare-styleable name="underLineBtn">
+        <attr name="unCheckedColor" format="reference|color" /><!-- 未选中时颜色 -->
+        <attr name="checkedColor" format="reference|color" /><!-- 选中时颜色 -->
+        <attr name="isChecked" format="boolean" /><!-- 是否选中 -->
+        <attr name="lineHeight" format="dimension" /><!-- 底部线的高度 -->
+        <attr name="lineWight" format="dimension" /><!-- 底部线的宽度 -->
+        <attr name="text" format="string" /><!-- 中间文本内容 -->
+        <attr name="textSize" format="dimension" /><!-- 中间字体大小 -->
+    </declare-styleable>
+</resources>

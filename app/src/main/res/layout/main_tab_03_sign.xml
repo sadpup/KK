@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.admin.kk.main.MainActivity">
+<!--树轴登录界面-->
+    <LinearLayout
+        android:id="@+id/main_tab03_sign_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titile_bar_height"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="发布"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="@color/gray"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="摘要"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="@color/gray"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="公开"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/main_tab03_sign_ll" />
+
+    <!--时间轴子布局文件  list_main_tab03_timeline_item-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_tab03_sign_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/main_tab03_sign_ll"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--按钮文字统一大小-->
+    <dimen name="btn_text_common_size">30sp</dimen>
+
+    <!--标题栏高度-->
+    <dimen name="titile_bar_height">48dp</dimen>
+    <!--标题栏中的tab高度，用来控制背景色实现的下划线宽度，下划线宽度等于 标题栏高度减去本高度-->
+    <dimen name="titile_bar_radiobutton_height">45dp</dimen>
+
+    <!--login界面剧中时候的边距，美观为主-->
+    <dimen name="login_context_padding_length">16dp</dimen>
+    <dimen name="login_item_padding_length">8dp</dimen>
+    <dimen name="login_logo_top_length">50dp</dimen>
+    <dimen name="optional_top_content_hight">80dp</dimen>
+
+    <!--自选界面 未登录窗口，内容最上方的独立item 固定高度-->
+
+    <!--person home 页-->
+    <dimen name="person_home_item_space">15dp</dimen>
+
+    <!-- 广告 -->
+    <dimen name="ad_context_title_size">10sp</dimen>
+    <dimen name="ad_context_title_h_size">5sp</dimen>
+
+
+    <!--common -->
+    <dimen name="common_cotent_margin">10dp</dimen>
+    <dimen name="common_cotent_padding">5dp</dimen>
+
+
+</resources>

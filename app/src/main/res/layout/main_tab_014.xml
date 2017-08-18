@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 主题图片 -->
+    <com.example.admin.kk.view.SlideShowView
+        android:id="@+id/slideshowView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_remen_ba"
+        android:layout_below="@+id/slideshowView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ad_context_title_h_size"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ad_context_title_h_size"
+            android:text="推荐书友"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_remen_ba01"
+        android:layout_below="@+id/ll_remen_ba"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_marginLeft="@dimen/ad_context_title_h_size" />
+
+    <ListView
+        android:id="@+id/lv_remen_ba"
+        android:layout_below="@+id/v_remen_ba01"
+        android:layout_marginLeft="@dimen/ad_context_title_h_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+
+</RelativeLayout>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_main_tab_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent">
+   <LinearLayout
+       android:id="@+id/llBtnMenu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:clickable="true"
+       android:gravity="bottom|center_horizontal"
+       android:orientation="horizontal"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp">
+      <LinearLayout
+          android:id="@+id/ll_tab_bottom01"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:descendantFocusability="beforeDescendants"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:visibility="visible">
+
+         <ImageButton
+             android:id="@+id/btn_tab_bottom01"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#0000"
+             android:clickable="false"
+             android:src="@mipmap/home_off" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/ll_tab_bottom02"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:descendantFocusability="beforeDescendants"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:visibility="visible" >
+
+         <ImageButton
+             android:id="@+id/btn_tab_bottom02"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#0000"
+             android:clickable="false"
+             android:src="@mipmap/treeheep_off" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginBottom="4dp"
+          android:gravity="center">
+
+         <ImageView
+             android:id="@+id/ivMenu"
+             android:layout_width="45dp"
+             android:layout_height="45dp"
+             android:contentDescription="@null"
+             android:src="@drawable/mainactivity_publish_publish" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/ll_tab_bottom03"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:descendantFocusability="beforeDescendants"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:visibility="visible">
+
+         <ImageButton
+             android:id="@+id/btn_tab_bottom03"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#0000"
+             android:clickable="false"
+             android:src="@mipmap/treetime_off" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/ll_tab_bottom04"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:descendantFocusability="beforeDescendants"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:visibility="visible">
+
+         <ImageButton
+             android:id="@+id/btn_tab_bottom04"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#0000"
+             android:clickable="false"
+             android:src="@mipmap/my_off" />
+
+      </LinearLayout>
+   </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/background_item_calendar"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/list_calendar_item_title_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="2017-07-19日流下了如此手笔："
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+    
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/item_calendar_content_item_tv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="parent"
+            android:text="《 恨不相逢未剃时》"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/item_calendar_content_item_tv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="发 | 摘 | 公"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/item_calendar_content_item_tv03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item_calendar_content_item_tv01"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end" android:maxLines="3"
+            android:text="苏漫溯不肯让自己停下来,在哪些位置的时光里？尝试追踪一下源码，发现mWindow是Window类型的，但是它是一个抽象类，setContentView也是抽象方法，所以我们要找到Window类的实现类才行。我们在Activity中查找一下mWindow在哪里被赋值了，可以发现它在Activity#attach方法中有如下实现："
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/item_calendar_content_item_tv04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_calendar_content_item_tv03"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            android:text="12：31"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/item_calendar_content_item_tv05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_calendar_content_item_tv03"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            android:text="》》》》》"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/item_calendar_content_item_tv06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item_calendar_content_item_tv03"
+            app:layout_constraintRight_toLeftOf="@id/item_calendar_content_item_tv05"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            android:text="喜欢的人"
+            android:textSize="10sp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

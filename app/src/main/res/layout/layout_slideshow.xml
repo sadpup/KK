@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/gray"
+    android:gravity="center_vertical">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/ad_context_title_size"
+        android:padding="4dp"
+        android:text="哈哈哈哈哈"
+        android:textSize="@dimen/ad_context_title_size"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_roll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_dot_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <View
+            android:id="@+id/v_dot1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@mipmap/v_dot_blue" />
+
+        <View
+            android:id="@+id/v_dot2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/v_dot_green" />
+    </LinearLayout>
+
+</RelativeLayout>

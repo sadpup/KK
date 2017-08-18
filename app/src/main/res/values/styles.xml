@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--我们必须设置这两个属性的值为true才行，以便使我们定义的layout侵入系统栏的领域。
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>-->
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色
+        <item name="android:statusBarColor">@android:color/transparent</item>-->
+
+    </style>
+
+    <!--
+    <style name="AppTheme" parent="android:Theme.DeviceDefault.Light.DarkActionBar"/>
+    -->
+
+    <!-- 这里自定义一个字体样式 -->
+    <style name="textStyle" >
+        <item name="android:textColor" >@color/colorAccent</item>
+        <item name="android:textSize" >@dimen/btn_text_common_size</item>
+    </style>
+
+
+    <style name="main_publishdialog_style" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

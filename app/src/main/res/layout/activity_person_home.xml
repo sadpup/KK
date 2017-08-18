@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.admin.kk.main.MainActivity"
+        android:background="@color/blue_light">
+
+        <TextView
+            android:id="@+id/person_home_back_tv"
+            android:layout_width="@dimen/titile_bar_height"
+            android:layout_height="@dimen/titile_bar_height"
+            android:gravity="center"
+            android:text="返回"/>
+
+        <ImageView
+            android:id="@+id/person_home_img01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/titile_bar_height"/>
+
+        <TextView
+            android:id="@+id/person_home_tv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李守田"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_img01"
+            android:layout_marginTop="@dimen/person_home_item_space"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书生"
+            app:layout_constraintLeft_toRightOf="@id/person_home_tv01"
+            app:layout_constraintTop_toBottomOf="@id/person_home_img01"
+            android:layout_marginLeft="@dimen/person_home_item_space"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            android:background="@drawable/textview_shape_follow_style"/>
+
+        <TextView
+            android:id="@+id/person_home_tv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读书是一种享受，我愿意享受其中。"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv01"
+            android:layout_marginTop="@dimen/person_home_item_space"/>
+
+        <TextView
+            android:id="@+id/person_home_tv03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+关注"
+            android:background="@drawable/textview_shape_follow_style"
+            android:padding="2dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv02"
+            android:layout_marginTop="@dimen/person_home_item_space"/>
+
+        <TextView
+            android:id="@+id/person_home_tv04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv03"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            android:text="1580"/>
+
+        <TextView
+            android:id="@+id/person_home_tv05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv03"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            app:layout_constraintRight_toLeftOf="@+id/person_home_tv04"
+            android:text="10"/>
+
+        <TextView
+            android:id="@+id/person_home_tv06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv03"
+            android:layout_marginTop="@dimen/person_home_item_space"
+            app:layout_constraintLeft_toRightOf="@+id/person_home_tv04"
+            android:text="1"/>
+
+        <TextView
+            android:id="@+id/person_home_tv07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv04"
+            android:text="粉丝"/>
+
+        <TextView
+            android:id="@+id/person_home_tv08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv04"
+            app:layout_constraintRight_toLeftOf="@+id/person_home_tv07"
+            android:text="关注"/>
+
+        <TextView
+            android:id="@+id/person_home_tv09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv04"
+            app:layout_constraintLeft_toRightOf="@+id/person_home_tv07"
+            android:text="树堆"/>
+
+        <RadioGroup
+            android:id="@+id/person_home_tab_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tv07"
+            android:layout_marginTop="@dimen/person_home_item_space">
+            <RadioButton
+                android:id="@+id/person_home_tab_rb01"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titile_bar_height"
+                android:layout_weight="1.0"
+                android:checked="true"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="0dp"
+                android:textColor="@color/colorGray"
+                android:text="发布 10"
+                android:background="@drawable/custom_title_radiobutton_selector"/>/>
+            <RadioButton
+                android:id="@+id/person_home_tab_rb02"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titile_bar_height"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="0dp"
+                android:textColor="@color/colorGray"
+                android:text="转发 200"
+                android:background="@drawable/custom_title_radiobutton_selector"/>/>
+
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/person_home_tab_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tab_rg"
+            android:layout_marginTop="1dp"/>
+      <!--  <FrameLayout
+            android:id="@+id/person_home_fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/person_home_tab_rg"
+            android:layout_marginTop="1dp">
+
+        </FrameLayout>-->
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+

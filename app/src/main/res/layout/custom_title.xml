@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/t_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titile_bar_height"
+    android:background="@drawable/title_bg"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageButton
+        android:id="@+id/custom_title_left_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/search"
+        android:layout_marginLeft="@dimen/common_cotent_margin"/>
+
+    <TextView
+        android:id="@+id/custom_title_center_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/custom_title_center_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/custom_title_left_tv"
+        android:layout_toLeftOf="@+id/custom_title_btLogin"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/titile_bar_height"
+        android:layout_marginRight="@dimen/titile_bar_height">
+
+        <RadioButton
+            android:id="@+id/custom_title_center_rb01"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/titile_bar_height"
+            android:layout_weight="1.0"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="@drawable/custom_textcolor_radiobutton_selector"
+            android:text="@string/custom_title_tab_follow"
+            android:background="@drawable/custom_title_radiobutton_selector"/>
+        <RadioButton
+            android:id="@+id/custom_title_center_rb02"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/titile_bar_height"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="@drawable/custom_textcolor_radiobutton_selector"
+            android:text="@string/custom_title_tab_optional"
+            android:background="@drawable/custom_title_radiobutton_selector"/>/>
+        <RadioButton
+            android:id="@+id/custom_title_center_rb03"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/titile_bar_height"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="@drawable/custom_textcolor_radiobutton_selector"
+            android:text="@string/custom_title_tab_select"
+            android:background="@drawable/custom_title_radiobutton_selector"/>/>
+        <RadioButton
+            android:id="@+id/custom_title_center_rb04"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/titile_bar_height"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="@drawable/custom_textcolor_radiobutton_selector"
+            android:text="@string/custom_title_tab_find"
+            android:background="@drawable/custom_title_radiobutton_selector"/>/>
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/custom_title_btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/message"
+        android:layout_marginRight="@dimen/common_cotent_margin"/>
+
+    <ImageButton
+        android:id="@+id/custom_title_btCalendar"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/ic_launcher_round"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/custom_title_btAdd"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/ic_launcher_round"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

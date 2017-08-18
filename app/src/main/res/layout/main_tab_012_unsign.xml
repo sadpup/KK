@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.kk.main.MainActivity"
+    android:background="@color/gray">
+<!--我是首页_自选(未登录)-->
+
+    <RelativeLayout
+        android:id="@+id/tab012_ll01"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@mipmap/first_book"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_margin="@dimen/common_cotent_margin">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="添加第一本书"
+                android:background="#FFE11A"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:text="当有人写和此书有关的文摘时，您也可以看到"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/right"
+            android:layout_marginRight="@dimen/common_cotent_margin"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab012_ll02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/common_cotent_margin"
+        android:layout_marginRight="@dimen/common_cotent_margin"
+        android:paddingTop="@dimen/common_cotent_margin"
+        android:paddingBottom="@dimen/common_cotent_margin"
+        app:layout_constraintTop_toBottomOf="@id/tab012_ll01"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/ranking_list"
+            android:text="书摘排行榜"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mtab02_unsign_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tab012_ll02"
+        android:layout_marginLeft="@dimen/common_cotent_margin"
+        android:layout_marginRight="@dimen/common_cotent_margin">
+
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>

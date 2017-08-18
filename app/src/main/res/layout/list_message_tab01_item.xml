@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是热门吧列表项的布局文件，每一行长什么样子，修改这里 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:paddingBottom="15dp"
+    android:gravity="center" >
+
+
+    <ImageView
+        android:id="@+id/message_tab01_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/message_tab01_item_tv01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:text="冯小刚" />
+
+            <TextView
+                android:id="@+id/message_tab01_item_tv02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/message_tab01_item_tv01"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="关注了你" />
+
+            <TextView
+                android:id="@+id/message_tab01_item_follow_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_shape_follow_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:padding="2dp"
+                android:textSize="18sp"
+                android:text="+关注" />
+        </RelativeLayout>
+        <!--
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="备注"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/message_tab01_item_tv03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_alignParentLeft="true"
+                    android:text="6分钟以前"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#545454</color>
+
+    <color name="gray">#cccccc</color>
+    <color name="red">#f00</color>
+    <color name="green">#0f0</color>
+    <color name="blue">#0000ff</color>
+    <color name="black">#000</color>
+    <color name="blue_light">#33b5e5</color>
+    <color name="blue_dark">#0099cc</color>
+    <color name="purple_light">#aa66cc</color>
+    <color name="purple_dark">#9933cc</color>
+    <color name="green_light">#99cc00</color>
+    <color name="green_dark">#669900</color>
+    <color name="yellow_light">#ffbb33</color>
+    <color name="yellow_dark">#ff8800</color>
+    <color name="red_light">#ff4444</color>
+    <color name="red_dark">#cc0000</color>
+    <color name="white">#ffffff</color>
+    <color name="lilght_gray">#e8e8e8</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- flippablestackview用到的-->
+    <color name="emerald">#2ecc71</color>
+    <color name="wisteria">#8e44ad</color>
+    <color name="clouds">#ecf0f1</color>
+    <color name="midnight_blue">#141d26</color>
+
+    <!--标题栏字体颜色-->
+    <color name="title_text_color">#1F8A70</color>
+    <color name="title_text_color_normal">#8D8D8D</color>
+</resources>

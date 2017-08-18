@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.kk.main.MainActivity">
+<!--树轴未登录界面-->
+    <TextView
+        android:id="@+id/main_tab03_unsign_tv01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="树轴是什么？"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/main_tab03_unsign_tv02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="树轴是对您过去登记的摘要、随笔、文章的集合。"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/login_item_padding_length"
+        app:layout_constraintTop_toBottomOf="@+id/main_tab03_unsign_tv01" />
+
+
+    <ImageView
+        android:id="@+id/main_tab03_unsign_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@mipmap/wood_age"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_tab03_unsign_tv02"
+        />
+
+    <TextView
+        android:id="@+id/main_tab03_unsign_tv03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未登录，请先登录。"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_tab03_unsign_img" />
+
+    <Button
+        android:id="@+id/main_tab03_unsign_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/person_home_item_space"
+        app:layout_constraintTop_toBottomOf="@+id/main_tab03_unsign_tv03"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
